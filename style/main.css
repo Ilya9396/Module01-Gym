@@ -7,6 +7,7 @@ body {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 .header {
     display: flex;
@@ -146,8 +147,13 @@ body {
     background-repeat: no-repeat;
     display: block;
     margin-top: 205px;
+    width: 52px;
     height: 55px;
     cursor: pointer;
+    transition: .2s ease;
+}
+.bg-down:hover {
+    transform: scale(1.2);
 }
 
 
@@ -184,10 +190,100 @@ body {
     height: 850px;
     background-repeat: no-repeat;  
 }
-
-
-
-
+.event {
+    margin-top: 163px;
+}
+.event-header {
+    margin-bottom: 42px;
+}
+.event-title {
+    font-size: 40px;
+    color: #2B3541;
+}
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 67px;
+    margin-left: 3px;
+    gap: 22px;
+    position: relative ;
+}
+.event-gradient { 
+   width: 367px;
+   height: 600px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   position: relative;    
+}
+.event-gradient img {
+    
+    width: 367px;
+    height: 600px;
+}
+.event-content {
+    top: 0px;;
+    color:#2b3541;
+    background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+}
+.event-content:hover {
+    background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);
+    
+ }
+ .event-date {
+    padding-left: 29px;
+    color: #2B3541;
+    font-size: 18px;
+    padding-top: 13px;
+    font-weight: 700;
+    line-height: 150%;
+    opacity: 0.6;
+}
+.event-heading {
+    color: #2B3541;
+    font-size: 28px;
+    padding-left: 29px;
+    margin-top: 21px;
+    line-height: 120%;
+}
+ .event-btn {
+    opacity: 0;
+    margin-left: 30px;
+    margin-right: 116px;
+    padding: 22px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: #2b3541;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    position: absolute;
+    outline: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fbf138;
+ }
+ .event-gradient:hover .event-btn {
+    opacity: 1;
+ }
+ .event-hashtag {
+    background-color: #fbf138;
+    color: #2b3541;
+    text-align: center;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 2px;
+ }
 
 
 @media (min-width: 766px) {
