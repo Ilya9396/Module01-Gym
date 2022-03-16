@@ -205,7 +205,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 67px;
     margin-left: 3px;
-    gap: 22px;
+    gap: 19px;
     position: relative ;
 }
 .event-gradient { 
