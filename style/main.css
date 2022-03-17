@@ -207,6 +207,7 @@ body {
     margin-left: 3px;
     gap: 19px;
     position: relative ;
+    
 }
 .event-gradient { 
    width: 367px;
@@ -214,12 +215,16 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   position: relative;    
+   position: relative; 
+     
 }
 .event-gradient img {
     
-    width: 367px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 80% center;
+    
 }
 .event-content {
     top: 0px;;
@@ -282,7 +287,7 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
  }
 
 
