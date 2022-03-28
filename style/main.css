@@ -74,10 +74,9 @@ body {
     color: #2B3541;
     text-decoration: none;
     position: relative;
-    margin-bottom: 5px;
     padding-bottom: 5px;
 }
-.header-nav a:before, .footer-nav a:before {
+.header-nav a:before, .footer-nav a:before  {
     content:'';
     position: absolute;
     border-bottom: solid 1px;
@@ -91,6 +90,8 @@ body {
 .header-nav a:hover:before, .footer-nav a:hover:before {
     transform: scaleX(1);
 }
+
+
 .social a:hover {
     transform: scale(1.2666);
     opacity: 1;
@@ -629,6 +630,8 @@ body {
     text-decoration: none;
     font-size: 14px;
     color: #2B3541;
+    position: relative;
+    padding-bottom: 5px;
 }
 .footer-social {
     display: flex;
